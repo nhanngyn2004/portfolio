@@ -13,7 +13,7 @@ export const Home = () => {
                     <img 
                         src="/images/profile.png" 
                         alt="Nhan Nguyen" 
-                        className="w-50 h-50 md:w-70 md:h-70 rounded-full border-4 border-blue-500 shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 hover:scale-105 object-cover"
+                        className="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-blue-500 shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 hover:scale-105 object-cover"
                     />
                 </div>
 
