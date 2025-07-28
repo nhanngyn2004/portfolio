@@ -1,4 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll"
+import gmailIcon from '/images/gmail.png'
+import linkedinIcon from '/images/linkedin.png'
+import githubIcon from '/images/github.png'
 
 export const Contact = () => {
     return (
@@ -38,7 +41,7 @@ export const Contact = () => {
                             <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_4px_16px_rgba(59,130,246,0.3)] transition-all duration-300">
                                 <div className="flex flex-col items-center space-y-4 text-blue-500">
                                     <img 
-                                        src="/images/gmail.png" 
+                                        src={gmailIcon} 
                                         alt="Email" 
                                         className="w-12 h-12"
                                     />
@@ -57,7 +60,7 @@ export const Contact = () => {
                                     className="flex flex-col items-center space-y-4 text-blue-500 hover:text-blue-300 transition-colors"
                                 >
                                     <img 
-                                        src="/images/linkedin.png" 
+                                        src={linkedinIcon} 
                                         alt="LinkedIn" 
                                         className="w-12 h-12"
                                     />
@@ -76,7 +79,7 @@ export const Contact = () => {
                                     className="flex flex-col items-center space-y-4 text-blue-500 hover:text-blue-300 transition-colors"
                                 >
                                     <img 
-                                        src="/images/github.png" 
+                                        src={githubIcon} 
                                         alt="GitHub" 
                                         className="w-12 h-12"
                                     />
