@@ -23,7 +23,7 @@ export const Home = () => {
                 </h1>
 
                 <p className="text-black text-lg mb-8 max-w-lg mx-auto">
-                I am a Computer Science student with a specialization in Intelligent Systems at the University of California, Irvine!
+                I am a Computer Science student with a specialization in Intelligent Systems at the University of California, Irvine! In my free time, I like to play volleyball and enjoy eating food with friends.
                 </p>
 
                 <div className="flex justify-center space-x-4">
