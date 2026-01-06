@@ -25,8 +25,8 @@ export const Contact = () => {
                             </p>
                             <p className="text-black text-lg">
                                 Here is my{" "}
-                                <a 
-                                    href="https://docs.google.com/document/d/1vlkZTVDlMFk1o4ms-7wIMCsh67jVbFCzZMUZoZP_pKA/edit?usp=sharing"
+                                <a
+                                    href="https://drive.google.com/file/d/1znx8idS7z5yXQz0_Z0VUqu55NKE0qK0j/view?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-500 hover:text-blue-300 transition-colors underline font-semibold"
