@@ -1,68 +1,57 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-export const Navbar = ({menuOpen, setMenuOpen}) => {
+export const Navbar = ({ menuOpen, setMenuOpen }) => {
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
-        document.body.style.overflow = menuOpen ? "hidden" : "";
-    }, [menuOpen]);
+        const handleScroll = () => setScrolled(window.scrollY > 20);
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const close = () => setMenuOpen(false);
 
     return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-        <div className="max-w-5xl mx-auto px-4">
-            <div className="flex justify-between items-center h-16">
-                <a href="#home" className="font-mono text-xl font-bold text-black">
-                    {" "} 
-                    nhan<span className="text-blue-500">.nguyen</span> 
-                </a>
+        <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${scrolled ? 'bg-white/90 backdrop-blur-xl shadow-[0_1px_0_#e4e4ec]' : ''}`}>
+            <div className="max-w-[1100px] mx-auto px-6 h-16 flex items-center">
+                <a href="#home" className="font-bold text-[1.1rem] tracking-tight text-[#5b50f0]">NN</a>
 
-                {/* Improved hamburger menu button */}
-                <button 
-                    className="w-8 h-8 flex flex-col justify-center items-center cursor-pointer z-50 md:hidden" 
-                    onClick={() => setMenuOpen((prev) => !prev)}
-                    aria-label="Toggle Menu"
+                <ul className="hidden md:flex gap-1 list-none ml-auto">
+                    {['home', 'about', 'projects', 'contact'].map(s => (
+                        <li key={s}>
+                            <a
+                                href={`#${s}`}
+                                className="px-[14px] py-[6px] rounded-lg text-sm font-medium text-[#60607a] hover:text-[#0f0f18] hover:bg-[#f0f0f5] transition-all capitalize"
+                            >
+                                {s}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+
+                <button
+                    className="md:hidden flex flex-col gap-[5px] p-2 rounded-lg ml-auto"
+                    onClick={() => setMenuOpen(prev => !prev)}
+                    aria-label="Menu"
                 >
-                    <div className={`w-6 h-0.5 bg-black transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></div>
-                    <div className={`w-6 h-0.5 bg-black transition-all duration-300 my-1 ${menuOpen ? 'opacity-0' : ''}`}></div>
-                    <div className={`w-6 h-0.5 bg-black transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></div>
+                    <span className={`block w-[22px] h-[2px] bg-[#60607a] rounded transition-all duration-200 origin-center ${menuOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+                    <span className={`block w-[22px] h-[2px] bg-[#60607a] rounded transition-all duration-200 ${menuOpen ? 'opacity-0' : ''}`} />
+                    <span className={`block w-[22px] h-[2px] bg-[#60607a] rounded transition-all duration-200 origin-center ${menuOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
                 </button>
-
-                <div className="hidden md:flex items-center space-x-8">
-                    <a 
-                        href="#home" 
-                        className="text-black hover:text-blue-400 transition-colors"                   
-                    >
-                        {" "}
-                        Home{" "}
-                    </a>
-
-                    <a 
-                        href="#about" 
-                        className="text-black hover:text-blue-400 transition-colors"                    
-                    >
-                        {" "}
-                        About{" "}
-                    </a>
-
-                    <a 
-                        href="#projects" 
-                        className="text-black hover:text-blue-400 transition-colors"                    
-                    >
-                        {" "}
-                        Projects{" "}
-                    </a>
-
-                    <a 
-                        href="#contact" 
-                        className="text-black hover:text-blue-400 transition-colors"
-                    >
-                        {" "}
-                        Contact{" "}
-                    </a>
-
-                </div>
-
             </div>
-        </div>
-    </nav>
+
+            <div className={`md:hidden flex-col bg-white border-t border-[#e4e4ec] px-6 pb-5 pt-3 ${menuOpen ? 'flex' : 'hidden'}`}>
+                {['home', 'about', 'projects', 'contact'].map(s => (
+                    <a
+                        key={s}
+                        href={`#${s}`}
+                        onClick={close}
+                        className="py-3 font-medium text-[#60607a] border-b border-[#e4e4ec] last:border-b-0 hover:text-[#0f0f18] transition-colors capitalize"
+                    >
+                        {s}
+                    </a>
+                ))}
+            </div>
+        </nav>
     );
 };

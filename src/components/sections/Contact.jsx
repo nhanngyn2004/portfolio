@@ -11,7 +11,7 @@ export const Contact = () => {
         >
             <RevealOnScroll>
                 <div className="max-w-6xl mx-auto px-6 w-full">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-blue-500 to bg-purple-600 bg-clip-text text-transparent text-center">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-12 text-black text-center">
                         Let's Connect
                     </h2>
                     
@@ -29,7 +29,7 @@ export const Contact = () => {
                                     href="https://drive.google.com/file/d/14pW0ACFUgaReTcaeikHaPixJCXR6_201/view?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-500 hover:text-blue-300 transition-colors underline font-semibold"
+                                    className="text-[#5b50f0] hover:text-[#a49eff] transition-colors underline font-semibold"
                                 >
                                     resume
                                 </a>
@@ -38,8 +38,8 @@ export const Contact = () => {
                         </div>
                         
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                            <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_4px_16px_rgba(59,130,246,0.3)] transition-all duration-300">
-                                <div className="flex flex-col items-center space-y-4 text-blue-500">
+                            <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-[#5b50f0] hover:shadow-[0_4px_16px_rgba(91,80,240,0.3)] transition-all duration-300">
+                                <div className="flex flex-col items-center space-y-4 text-[#5b50f0]">
                                     <img 
                                         src={gmailIcon} 
                                         alt="Email" 
@@ -52,12 +52,12 @@ export const Contact = () => {
                                 </div>
                             </div>
                             
-                            <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_4px_16px_rgba(59,130,246,0.3)] transition-all duration-300">
+                            <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-[#5b50f0] hover:shadow-[0_4px_16px_rgba(91,80,240,0.3)] transition-all duration-300">
                                 <a 
                                     href="https://www.linkedin.com/in/nhanngyn2004/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex flex-col items-center space-y-4 text-blue-500 hover:text-blue-300 transition-colors"
+                                    className="flex flex-col items-center space-y-4 text-[#5b50f0] hover:text-[#a49eff] transition-colors"
                                 >
                                     <img 
                                         src={linkedinIcon} 
@@ -71,12 +71,12 @@ export const Contact = () => {
                                 </a>
                             </div>
                             
-                            <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-blue-500 hover:shadow-[0_4px_16px_rgba(59,130,246,0.3)] transition-all duration-300">
+                            <div className="p-8 rounded-xl border border-black hover:-translate-y-2 hover:border-[#5b50f0] hover:shadow-[0_4px_16px_rgba(91,80,240,0.3)] transition-all duration-300">
                                 <a 
                                     href="https://github.com/nhanngyn2004"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex flex-col items-center space-y-4 text-blue-500 hover:text-blue-300 transition-colors"
+                                    className="flex flex-col items-center space-y-4 text-[#5b50f0] hover:text-[#a49eff] transition-colors"
                                 >
                                     <img 
                                         src={githubIcon} 

@@ -14,11 +14,11 @@ export const Home = () => {
                     <img 
                         src={profileImage}
                         alt="Nhan Nguyen" 
-                        className="w-75 h-75 md:w-100 md:h-100 rounded-full border-4 border-blue-500 shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 hover:scale-105 object-cover"
+                        className="w-75 h-75 md:w-100 md:h-100 rounded-full border-4 border-[#5b50f0] shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 hover:scale-105 object-cover"
                     />
                 </div>
 
-                <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to bg-purple-600 bg-clip-text text-transparent leading-normal">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 text-black leading-normal">
                     Hi, I'm Nhan Nguyen
                 </h1>
 
@@ -27,11 +27,11 @@ export const Home = () => {
                 </p>
 
                 <div className="flex justify-center space-x-4">
-                    <a href="#projects" className="bg-blue-500 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                    <a href="#projects" className="bg-[#5b50f0] text-[#f7f7fa] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(91,80,240,0.4)]">
                         View projects
                     </a>
 
-                    <a href="#contact" className="bg-blue-500 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]">
+                    <a href="#contact" className="bg-[#5b50f0] text-[#f7f7fa] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(91,80,240,0.4)]">
                         Contact Me!
                     </a>
                 </div>

@@ -16,7 +16,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
 
             <button 
                 onClick={() => setMenuOpen(false)} 
-                className="absolute top-6 right-6 text-white text-4xl focus:outline-none cursor-pointer hover:text-blue-400 transition-colors z-60"
+                className="absolute top-6 right-6 text-white text-4xl focus:outline-none cursor-pointer hover:text-[#7b72f3] transition-colors z-60"
                 aria-label="Close Menu"
             >
                 &times;
@@ -25,7 +25,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
             <a 
                 href="#home"
                 onClick={() =>  setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-blue-400
+                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-[#7b72f3]
                             ${
                                 menuOpen
                                     ? "opacity-100 translate-y-0"
@@ -39,7 +39,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
             <a 
                 href="#about" 
                 onClick={() =>  setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-blue-400
+                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-[#7b72f3]
                             ${
                                 menuOpen
                                     ? "opacity-100 translate-y-0"
@@ -53,7 +53,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
             <a 
                 href="#projects" 
                 onClick={() =>  setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-blue-400
+                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-[#7b72f3]
                             ${
                                 menuOpen
                                     ? "opacity-100 translate-y-0"
@@ -67,7 +67,7 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
             <a 
                 href="#contact" 
                 onClick={() =>  setMenuOpen(false)} 
-                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-blue-400
+                className={`text-2xl font-semibold text-white my-4 transform transition-all duration-300 hover:text-[#7b72f3]
                             ${
                                 menuOpen
                                     ? "opacity-100 translate-y-0"
