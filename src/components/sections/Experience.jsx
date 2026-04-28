@@ -18,7 +18,7 @@ const experience = [
 
 export const Experience = () => {
     return (
-        <section id="experience" className="py-12 bg-[#f7f7fa]">
+        <section id="experience" className="py-20 bg-[#f7f7fa] scroll-mt-16">
             <div className="w-full">
             <RevealOnScroll>
             <div className="max-w-[1100px] mx-auto px-6">

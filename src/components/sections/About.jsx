@@ -6,7 +6,7 @@ export const About = () => {
     const cloudSkills = ["AWS", "Kubernetes", "Docker", "MySQL", "MongoDB", "OpenAI API"]
 
     return (
-        <section id="about" className="py-24 bg-[#f7f7fa]">
+        <section id="about" className="py-20 bg-[#f7f7fa] scroll-mt-16">
             <RevealOnScroll>
             <div className="max-w-[1100px] mx-auto px-6">
                 <div className="mb-14">

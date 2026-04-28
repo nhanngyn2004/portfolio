@@ -30,7 +30,7 @@ const projects = [
 
 export const Projects = () => {
     return (
-        <section id="projects" className="py-24">
+        <section id="projects" className="py-20 scroll-mt-16">
             <RevealOnScroll>
             <div className="max-w-[1100px] mx-auto px-6">
                 <div className="mb-14">

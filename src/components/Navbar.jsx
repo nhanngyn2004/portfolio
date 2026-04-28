@@ -17,7 +17,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 <a href="#home" className="font-bold text-[1.1rem] tracking-tight text-[#5b50f0]">NN</a>
 
                 <ul className="hidden md:flex gap-1 list-none ml-auto">
-                    {['home', 'about', 'projects', 'contact'].map(s => (
+                    {['home', 'about', 'experience', 'projects', 'contact'].map(s => (
                         <li key={s}>
                             <a
                                 href={`#${s}`}
@@ -41,7 +41,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             </div>
 
             <div className={`md:hidden flex-col bg-white border-t border-[#e4e4ec] px-6 pb-5 pt-3 ${menuOpen ? 'flex' : 'hidden'}`}>
-                {['home', 'about', 'projects', 'contact'].map(s => (
+                {['home', 'about', 'experience', 'projects', 'contact'].map(s => (
                     <a
                         key={s}
                         href={`#${s}`}

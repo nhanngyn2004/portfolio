@@ -2,7 +2,7 @@ import { RevealOnScroll } from "../RevealOnScroll"
 
 export const Contact = () => {
     return (
-        <footer id="contact" className="py-24 bg-[#f7f7fa] border-t border-[#e4e4ec]">
+        <footer id="contact" className="py-20 bg-[#f7f7fa] border-t border-[#e4e4ec] scroll-mt-16">
             <RevealOnScroll>
             <div className="max-w-[1100px] mx-auto px-6">
                 <div className="mb-14">
