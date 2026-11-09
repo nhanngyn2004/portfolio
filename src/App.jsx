@@ -1,5 +1,3 @@
-import './App.css'
-import "./index.css";
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/sections/Home';
@@ -13,7 +11,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <div className="min-h-screen bg-[#f7f7fa] text-black">
+      <div className="min-h-screen bg-page text-black">
 
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Home />

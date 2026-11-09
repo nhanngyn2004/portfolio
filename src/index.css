@@ -1,49 +1,18 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent: #2f6b4f;
+  --color-accent-hover: #24543e;
+  --color-accent-tint: #e8f1ec;
+  --color-accent-border: #cfe2d7;
+  --color-accent-glow: rgb(47 107 79 / 0.1);
+  --color-page: #f8f8f5;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  background: #f7f7fa;
+  background: var(--color-page);
   color: #000000;
-}
-
-@layer utilities {
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-
-  .animate-blink {
-    animation: blink 0.8s step-end infinite;
-  }
-
-
-  @keyframes loading {
-    0% {
-      transform: translateX(-100);
-    }
-    100% {
-      transform: translateX(250%)
-    }
-  }
-
-  .animate-loading-bar {
-    animation: loading 0.8s ease infinite;
-  }
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
 }

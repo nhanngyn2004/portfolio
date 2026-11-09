@@ -1,5 +1,3 @@
-import { RevealOnScroll } from "../RevealOnScroll"
-
 const experience = [
     {
         role: "Software Engineer Intern",
@@ -18,43 +16,39 @@ const experience = [
 
 export const Experience = () => {
     return (
-        <section id="experience" className="py-20 bg-[#f7f7fa] scroll-mt-16">
-            <div className="w-full">
-            <RevealOnScroll>
+        <section id="experience" className="py-14 bg-page scroll-mt-16">
             <div className="max-w-[1100px] mx-auto px-6">
-                <div className="mb-14">
-                    <p className="text-xs font-semibold tracking-[3px] uppercase text-[#5b50f0] mb-3">Work History</p>
+                <div className="mb-8">
+                    <p className="text-xs font-semibold tracking-[3px] uppercase text-accent mb-3">Work History</p>
                     <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#0f0f18]">Experience</h2>
                 </div>
 
                 <div className="flex flex-col gap-4">
                     {experience.map(({ role, company, location, date, bullets, tech }) => (
-                        <div key={role} className="bg-white border border-[#e4e4ec] rounded-xl p-6 hover:border-[#5b50f0] hover:shadow-[0_2px_12px_rgba(91,80,240,0.1)] transition-all">
+                        <div key={role} className="bg-white border border-[#e4e4ec] rounded-xl p-6 hover:border-accent hover:shadow-[0_2px_12px_var(--color-accent-glow)] transition-all">
                             <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                                 <div>
                                     <h3 className="text-base font-bold text-[#0f0f18]">{role}</h3>
-                                    <p className="text-sm font-semibold text-[#5b50f0] mt-0.5">{company} · {location}</p>
+                                    <p className="text-sm font-semibold text-accent mt-0.5">{company} · {location}</p>
                                 </div>
                                 <span className="text-xs text-[#60607a] bg-[#f0f0f5] border border-[#e4e4ec] px-3 py-1 rounded-full whitespace-nowrap">{date}</span>
                             </div>
                             <ul className="flex flex-col gap-2 mb-4">
                                 {bullets.map((b, i) => (
-                                    <li key={i} className="text-sm text-[#60607a] leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-[#5b50f0]">
+                                    <li key={i} className="text-sm text-[#60607a] leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[9px] before:w-1.5 before:h-1.5 before:rounded-full before:bg-accent">
                                         {b}
                                     </li>
                                 ))}
                             </ul>
                             <div className="flex flex-wrap gap-1.5">
                                 {tech.map(t => (
-                                    <span key={t} className="text-[0.7rem] font-semibold px-2.5 py-1 rounded bg-[#eeedfd] border border-[#dddafa] text-[#5b50f0]">{t}</span>
+                                    <span key={t} className="text-[0.7rem] font-semibold px-2.5 py-1 rounded bg-accent-tint border border-accent-border text-accent">{t}</span>
                                 ))}
                             </div>
                         </div>
                     ))}
                 </div>
 
-            </div>
-            </RevealOnScroll>
             </div>
         </section>
     );

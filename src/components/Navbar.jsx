@@ -14,7 +14,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     return (
         <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${scrolled ? 'bg-white/90 backdrop-blur-xl shadow-[0_1px_0_#e4e4ec]' : ''}`}>
             <div className="max-w-[1100px] mx-auto px-6 h-16 flex items-center">
-                <a href="#home" className="font-bold text-[1.1rem] tracking-tight text-[#5b50f0]">NN</a>
+                <a href="#home" className="font-bold text-[1.1rem] tracking-tight text-accent">Nhan Nguyen</a>
 
                 <ul className="hidden md:flex gap-1 list-none ml-auto">
                     {['home', 'about', 'experience', 'projects', 'contact'].map(s => (
